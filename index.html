@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="all" >
+    <h3>Password Generator</h3>
+    <div class="pass_gen">
+        <input type="text" readonly placeholder="password" password >
+        <span copy-msg></span>
+        <button copy-button><img src="copyy.png" alt="icon"></button>
+        
+    </div>
+    <br>
+    <div>
+        <form id="myform">
+            <div class="length_container"><label for="length">Password length</label>
+            <p id="slidervalue">8</p>
+            </div>
+            <br>
+            <input id="length" name="length" type="range" min="1" max="15" value="8">
+            <br>
+            <input type="checkbox" id="i_upper" name="i_upper">
+            <label for="i_upper">Include uppercase letters</label>
+            <br>
+            <input type="checkbox" id="i_lower" name="i_lower">
+            <label for="i_lower">Include lowercase letters</label>
+            <br>
+            <input type="checkbox" id="i_numbers" name="i_numbers">
+            <label for="i_numbers">Include Numbers</label>
+            <br>
+            <input type="checkbox" id="i_symbols" name="i_symbols">
+            <label for="i_symbols">Include Symbols</label>
+            <br>
+            
+            <div class="strength">
+                <p>strength</p>
+                <div class="strength-color"></div>
+            </div>
+            <button type="submit">Generate Password</button>
+        </form>
+    </div>
+    
+</div>
+<script src="script.js"></script>
+</body>
+</html>

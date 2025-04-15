@@ -1,0 +1,106 @@
+:root{
+    --purplecolor:rgb(221, 149, 247);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    margin: 0;
+    background: linear-gradient(45deg,purple,rgb(247, 96, 244),rgb(0, 238, 255));
+}
+
+#slidervalue{
+    padding:10px;
+    margin:0;
+    
+}
+.length_container{
+    display: flex;
+    justify-content: space-between;
+}
+.length_container label{
+    padding:10px;
+}
+.pass_gen{
+    background-color:var(--purplecolor);
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+}
+form{
+    background-color: var(--purplecolor);
+    border: 5px solid rgb(100, 7, 154);
+}
+.strength{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--purplecolor);
+}
+
+.strength div{
+   margin:10px;
+   background-color:var(--purplecolor);
+   height:1em;
+   width:1em;
+   border-radius: 1em; 
+  /* box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); */
+}
+#length{
+    width:90%;
+    -webkit-appearance:none;
+    
+    
+}
+img{
+    height: 25px;
+    width: 25px;
+    margin:10px;
+}
+
+[copy-msg]{
+    position: absolute;
+    bottom:100%;
+    left:77%;
+    width:45px;
+    background-color: rgb(173, 4, 173);
+    border-radius: 1em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.active{
+    opacity: 1;
+    
+}
+/* @property --angle{
+    syntax:"<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+#myform::after,#myfrom:hover{
+    content: '';
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:50%;
+    left:50%;
+    translate:-50% -50%;
+    background-image: conic-gradient(from var(--angle),yellow ,rgb(25, 0, 255),green,red,teal,yellow);
+    z-index:-1;
+    padding:4px;
+    border-radius:10px;
+    filter:blur(2px);
+    animation:3s spin linear infinite;
+    
+}
+
+@keyframes spin{
+    from{
+        --angle:0deg;
+    }
+    to{
+        --angle:360deg;
+    }
+} */
